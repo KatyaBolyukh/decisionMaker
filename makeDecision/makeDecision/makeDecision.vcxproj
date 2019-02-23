@@ -146,7 +146,21 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AlternativeTableForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AnalyticTable.h" />
+    <ClInclude Include="CriteraTableForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Form1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="HierarchyAnalysis.h" />
+    <ClInclude Include="MainProjectForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ProjectForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="resource.h" />
@@ -156,9 +170,15 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AlternativeTableForm.cpp" />
+    <ClCompile Include="AnalyticTable.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CppCLR_WinformsProjekt.cpp" />
+    <ClCompile Include="CriteraTableForm.cpp" />
     <ClCompile Include="Form1.cpp" />
+    <ClCompile Include="HierarchyAnalysis.cpp" />
+    <ClCompile Include="MainProjectForm.cpp" />
+    <ClCompile Include="ProjectForm.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -168,6 +188,23 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlternativeTableForm.resx">
+      <DependentUpon>AlternativeTableForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriteraTableForm.resx">
+      <DependentUpon>CriteraTableForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProjectForm.resx">
+      <DependentUpon>MainProjectForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectForm.resx">
+      <DependentUpon>ProjectForm.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

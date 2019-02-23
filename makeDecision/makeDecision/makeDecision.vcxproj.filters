@@ -27,6 +27,24 @@
     <ClInclude Include="Form1.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="AnalyticTable.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="HierarchyAnalysis.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProjectForm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectForm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CriteraTableForm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="AlternativeTableForm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -45,6 +63,24 @@
     </ClCompile>
     <ClCompile Include="Form1.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalyticTable.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="HierarchyAnalysis.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProjectForm.cpp">
+      <Filter>Headerdateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectForm.cpp">
+      <Filter>Headerdateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CriteraTableForm.cpp">
+      <Filter>Headerdateien</Filter>
+    </ClCompile>
+    <ClCompile Include="AlternativeTableForm.cpp">
+      <Filter>Headerdateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

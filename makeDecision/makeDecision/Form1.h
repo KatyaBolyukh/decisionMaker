@@ -34,6 +34,12 @@ namespace CppCLR_WinformsProjekt {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::MenuStrip^  menuStrip1;
+	protected:
+	private: System::Windows::Forms::ToolStripMenuItem^  projectToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  newProjectToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  openProjectToolStripMenuItem;
+
 
 	private:
 		/// <summary>
@@ -48,15 +54,62 @@ namespace CppCLR_WinformsProjekt {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->projectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->newProjectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->openProjectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
-
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->ImageScalingSize = System::Drawing::Size(40, 40);
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->projectToolStripMenuItem });
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Size = System::Drawing::Size(1546, 52);
+			this->menuStrip1->TabIndex = 0;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// projectToolStripMenuItem
+			// 
+			this->projectToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->newProjectToolStripMenuItem,
+					this->openProjectToolStripMenuItem
+			});
+			this->projectToolStripMenuItem->Name = L"projectToolStripMenuItem";
+			this->projectToolStripMenuItem->Size = System::Drawing::Size(122, 48);
+			this->projectToolStripMenuItem->Text = L"Project";
+			// 
+			// newProjectToolStripMenuItem
+			// 
+			this->newProjectToolStripMenuItem->Name = L"newProjectToolStripMenuItem";
+			this->newProjectToolStripMenuItem->Size = System::Drawing::Size(326, 46);
+			this->newProjectToolStripMenuItem->Text = L"New project";
+			// 
+			// openProjectToolStripMenuItem
+			// 
+			this->openProjectToolStripMenuItem->Name = L"openProjectToolStripMenuItem";
+			this->openProjectToolStripMenuItem->Size = System::Drawing::Size(326, 46);
+			this->openProjectToolStripMenuItem->Text = L"Open project";
+			// 
+			// Form1
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(16, 31);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 261);
+			this->ClientSize = System::Drawing::Size(1546, 965);
+			this->Controls->Add(this->menuStrip1);
+			this->MainMenuStrip = this->menuStrip1;
+			this->Margin = System::Windows::Forms::Padding(8, 7, 8, 7);
 			this->Name = L"Form1";
 			this->Text = L"Form1";
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
+			this->PerformLayout();
+
 		}
 #pragma endregion
+
 	};
 }
